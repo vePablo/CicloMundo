@@ -1,88 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>CicloMundo</title>
 </head>
+
 <body>
     <header>
-        <div class="content">
-            <nav class="navbar">
-                <a class="logo" href="../index.html"><img src="../img/logo.png" alt="Logo de ciclistas"></a>
-                <ul>
-                    <li><a href="./mtb.html">Mountain bike</a></li>
-                    <li><a href="./road.html">Road bike</a></li>
-                    <li><a href="./nutricion.html"> Nutrición</a></li>
-                    <li><a href="./entrenamiento.html">Entrenamiento</a></li>
-                </ul>
-                <div class="user-buscador">
-                    <a href="#"><img src="../img/user.png" alt="usuario"></a>
-                    <a href="#"><img src="../img/buscar.png" alt="buscador"></a>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo.png" alt="logo dos ciclistas">
+                </a>
+                <a class="navbar-brand" href="../index.html">CicloMundo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/road.html">Ruta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/mtb.html">Mountain Bike</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/entrenamiento.html">Entrenamiento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/nutricion.html">Nutricion</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn " type="submit">Buscar</button>
+                    </form>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
-    <section class="noticias-contenedor_pages">
-        <h2>Road Bike</h2>
-        <div>
-            <a href="./articulos/articulouno.html">
-                <img src="../img/mujer-ciclista-profesional.jpg" alt="mujerbici">
-            </a>
-            <div class="overlay">
-                <div class="overlay-tag">
-                    <a href="./road.html">RUTA</a>
-                    <h3 class="overlay-txt"><a href="../pages/articulos/articulouno.html">La ciclismo y la maternidad</a></h3>
+    <main>
+        <h1 class="text-h1 ms-4">Ruteros</h1>
+        <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="cards-wrapper">
+                        <div class="cards">
+                            <div class="img-wrapped">
+                                <a href="./articulos/articulouno.html"><img src="../img/mujer-ciclista-profesional.jpg" alt="mujerbici" loading="lazy"></a>
+                            </div>
+                            <div class="card-body text-center">
+                                <a href="road.html" class="card-link">RUTA</a>
+                                <h5 class="card-title"><a href="./articulos/articulouno.html">El ciclismo y la
+                                        maternidad</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="cards-wrapper">
+                        <div class="cards">
+                            <div class="img-wrapped">
+                                <a href="./articulos/articulouno.html"><img src="../img/mujer-ciclista-profesional.jpg" alt="mujerbici" loading="lazy"></a>
+                            </div>
+                            <div class="card-body text-center">
+                                <a href="road.html" class="card-link">RUTA</a>
+                                <h5 class="card-title"><a href="./articulos/articulouno.html">El ciclismo y la
+                                        maternidad</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="cards-wrapper">
+                        <div class="cards">
+                            <div class="img-wrapped">
+                                <a href="./articulos/articulouno.html"><img src="../img/mujer-ciclista-profesional.jpg" alt="mujerbici" loading="lazy"></a>
+                            </div>
+                            <div class="card-body text-center">
+                                <a href="road.html" class="card-link">RUTA</a>
+                                <h5 class="card-title"><a href="./articulos/articulouno.html">El ciclismo y la
+                                        maternidad</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
+    <footer class="bg-dark text-light py-3 mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text mb-0">CicloMundo </p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled d-flex justify-content-end mb-0">
+                        <li class="me-3"><a href="#">Ruta</a></li>
+                        <li class="me-3"><a href="#">Mountain Bike</a></li>
+                        <li class="me-3"><a href="#">Entrenamiento</a></li>
+                        <li class="me-3"><a href="#">Nutrición</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>   
-    <footer>
-        <div class="footer-contenedor">
-            <div class="footer">  
-                <div class="footer-txt">
-                    <h2>LOGO</h2>
-                    <h3>Todos los dereschos reservados</h3>
-                </div>    
-                <div class="media-link">
-                    <a href="#"><img src="../img/facebook_5968764.png" alt="facebook"></a>
-                    <a href="#"><img src="../img/instagram_2111463.png" alt="instagram"></a>
-                    <a href="#"><img src="../img/twitter_5968958.png" alt="twitter"></a>
-                    <a href="#"><img src="../img/youtube_1384060.png" alt="youtube"></a>
+        <div class="sub-footer bg-dark text-light py-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-unstyled d-flex mb-0">
+                            <li class="me-2"><a href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li class="me-2"><a href="#"><i class="bi bi-facebook"></i></a></li>
+                            <li class="me-2"><a href="#"><i class="bi bi-youtube"></i></a></li>
+                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-unstyled d-flex justify-content-end mb-0">
+                            <li class="me-3"><a href="#">Política de privacidad</a></li>
+                            <li><a href="#">Copyright</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>         
-                <div class="agenda_link">
-                    <h2>AGENDA</h2>
-                    <ul>
-                        <li><a href="#">ENLACE</a></li>
-                        <li><a href="#">ENLACE</a></li>
-                        <li><a href="#">ENLACE</a></li>
-                        <li><a href="#">ENLACE</a></li>
-                        <li><a href="#">ENLACE</a></li>
-                    </ul>
-                </div>
-                <div class="ligas_link">
-                    <h2>LIGAS</h2>
-                    <ul>
-                        <li><a href="#">ENLACE</a></li>
-                        <li><a href="#">ENLACE</a></li>
-                        <li><a href="#">ENLACE</a></li>
-                        <li><a href="#">ENLACE</a></li>
-                        <li><a href="#">ENLACE</a></li>
-                    </ul>
-                </div>
-                <div class="agenda-nacional_link">
-                    <h2>AGENDA NACIONAL</h2>
-                    <ul>
-                        <li><a href="#">ENLACE</a></li>
-                        <li><a href="#">ENLACE</a></li>
-                        <li><a href="#">ENLACE</a></li>
-                        <li><a href="#">ENLACE</a></li>
-                        <li><a href="#">ENLACE</a></li>
-                    </ul>
-                </div>
+            </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>

@@ -1,233 +1,192 @@
-/* FUENTES */
 
-@import url('https://fonts.googleapis.com/css2?family=Gelasio&family=Roboto:wght@700&display=swap');
-
-/* font-family: 'Gelasio', serif; h2 en adelante
-font-family: 'Roboto', sans-serif; titulos */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-}
-
-body {
-    /* max-width: 1200px; */
-    margin: auto;
-    align-content: center;
-}
-
-.content {
-    padding: 9px;
-    background-color: #2c2cd3;
-    
-
-}
-
-.navbar {
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo img {
-    height: 50px;
-    width: auto;
-
-}
-
-.navbar ul {
-    display: flex;
-    
-}
-
-.navbar ul li a {
-    margin: 20px;
-    color: #dedede;
-    font-size: 18 px;
-    font-weight: bold;
-    cursor: default;
-}
-
-.navbar ul li a:hover {
-    color: #fff;
-    font-size: 19px;
-}
-
-.user-buscador a img{
-    height: 50px;
-    width: 50px;
-    filter: invert(100%);
-    margin: 8px;
-}
-
-.newbar-contenedor {
-    display: none;
 }
 
 
+/* navbar */
 
-.hero{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-
+.navbar-brand img {
+    width: 30px;
+    height: 24px;
 }
 
 
-
-.hero-img img {
-    height: calc(100vh - 90px);
-    transform: scalex(-1)
-}
-h1 {
-    font-size: 64px;
-}
-
-.noticias-contenedor{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    
-}
-
-.noticias-contenedor img, .noticias-contenedor_pages img {
-    height: 500px;
-    width: 500px;
-    image-rendering: 130px;
-
-}
-
-.overlay {
-    position: relative;
-    bottom: 90px;
-    left: 20px;
-    
-}
-
-.overlay-tag a{
-    
-    background-color: #2c2cd3;
-    color: #fff;
-}
-
-.formulario {
-    background-image: url(../img/formulario-fondo.jpg);
-    background-position: center;
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.452)), url(../img/bg_hero.jpeg);
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
-    height:600px;
-    filter: grayscale(70%);
-    
-}
-
-.formulario-contenedor {
-    height: 100%;
+    background-attachment: fixed;
+    height: auto;
     width: 100%;
+}
+
+
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.card-body a {
+    text-decoration: none;
+
+}
+
+/* carrusel */
+.cards-wrapper {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    margin-left: 50px;
+    align-items: center;
 }
 
-.formulario-contenedor h2 {
-    color: #fff;
-    font-size: 30px;
-    margin-bottom: 10px;
+.img-wrapped img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
-.formulario-contenedor p {
-    color: #fff;
-    font-size: 20px;
-    margin-bottom: 10px;
-    
-}
+/* paatrocinadores */
 
-.formulario-contenedor form .campo {
-    font-size: 16px;
-    border-radius: 5%;
-    width: 300px;
-    border: none;
-    padding: 5px 5px;
-    outline: none;
-}
-
-.formulario-contenedor form .btn {
-    cursor: default;
-    padding: 6px 6px;
-    border: none;
-    border-radius: 5px;
-    background-color: #2c2cd3;
-    color: #fff;
-}
-
-.formulario-contenedor form .btn:hover {
-    background-color: #5353ec;
-}
-
-.footer-contenedor {
-    background-color: #2c2cd3;
+.patro_contenedor {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    
-}
-.footer-contenedor a {
-    color: #000;
-    cursor: default;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.footer-contenedor a:hover {
-    font-weight: bolder;
+.patro_contenedor img {
+    filter: grayscale(100%);
+    margin: 20px 0;
 }
 
-.footer-txt {
-    padding: 10px;
-    margin: 10px;
+/* footer */
+footer ul li a {
+    text-decoration: none;
+    position: relative;
 }
 
-.agenda_link, .ligas_link, .agenda-nacional_link {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+footer ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    /* Color del overline */
+    transition: width 0.3s ease-in-out;
+    /* Duración de la animación y tipo de transición */
+    transform: translateX(-50%);
 }
 
-.agenda_link h2, .ligas_link h2, .agenda-nacional_link h2{
-    font-size: 16px;
+footer ul li a:hover::before {
+    width: 100%;
 }
 
-.media-link img {
-    height: 40px;
-    width: 40px;
-    padding: 10px;
-    margin: 10px;
-    
+.sub-footer ul li a {
+    text-decoration: none;
+    position: relative;
 }
 
-.blog {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-    padding: 0;
+.sub-footer ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    /* Color del overline */
+    transition: width 0.3s ease-in-out;
+    /* Duración de la animación y tipo de transición */
+    transform: translateX(-50%);
 }
-.blog h1 {
-    text-align: center;
+
+.sub-footer ul li a:hover::before {
+    width: 100%;
+}
+
+/* articulos */
+
+.navegador{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.blog-container {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-title {
     font-size: 24px;
+    color: #333;
+    margin: 0;
 }
-.blog p {
-    text-align: justify;
+
+.blog-date {
+    font-size: 14px;
+    color: #777;
+}
+
+.blog-image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.blog-subtitle {
+    font-size: 20px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.blog-intro {
     font-size: 16px;
+    color: #555;
 }
 
-.blog img {
-    height: 500px;
-    width: 500px;
-    image-rendering: 130px;
+.blog-subtitle+p {
+    margin-top: 10px;
+}
 
+
+
+
+
+/* @medias */
+
+@media (max-width: 768px) {
+
+    .hero__img,
+    .hero__tabla {
+        display: none;
+    }
+
+    .hero-texto {
+        text-align: center;
+        /* Centrar texto horizontalmente */
+    }
+
+    .hero h1,
+    .hero h2 {
+        font-size: 1.5rem;
+        /* Tamaño de fuente reducido */
+    }
+
+    .hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.452)), url(../img/bg_hero.jpeg);
+        background-position: center center;
+
+
+        height: auto;
+    }
 }
