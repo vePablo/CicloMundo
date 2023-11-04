@@ -1,94 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/style.css">
-    <title>CicloMundo</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <title>CicloMundo</title>
+    </head>
 <body>
     <header>
-        <div class="content">
-            <nav class="navbar">
-                <a class="logo" href="../../index.html"><img src="../../img/logo.png" alt="logo"></a>
-                <ul>
-                    <li><a href="../mtb.html">Mountain bike</a></li>
-                    <li><a href="../road.html">Road bike</a></li>
-                    <li><a href="../nutricion.html"> Nutrición</a></li>
-                    <li><a href="../entrenamiento.html">Entrenamiento</a></li>
-                </ul>
-                <div class="user-buscador">
-                    <a href="#"><img src="../../img/user.png" alt="usuario"></a>
-                    <a href="#"><img src="../../img/buscar.png" alt="buscador"></a>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../img/logo.png" alt="logo dos ciclistas">
+                </a>
+                <a class="navbar-brand" href="../../index.html">CicloMundo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../road.html">Ruta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../mtb.html">Mountain Bike</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../entrenamiento.html">Entrenamiento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../nutricion.html">Nutricion</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn " type="submit">Buscar</button>
+                    </form>
                 </div>
-            </nav>
-        </div>
-    </header>
-    <a href="../mtb.html" class="navegar">Atras</a>
-    <section class="blog-contenedor">
+            </div>
+        </nav>
+    </header>  
+    <main>
+    <a href="../road.html" class="text-decoration-none ms-4 navegador">Atras</a>
+    <section class="blog-container">
         <article class="blog">
-
-            <h2>Las Últimas Tendencias en Frenos Hidráulicos para Ciclismo <span class="tie-date"></span></h2>
-            <p>En el emocionante mundo del ciclismo, la tecnología y la innovación nunca dejan de avanzar. En esta ocasión, nos sumergimos en el fascinante mundo de los frenos hidráulicos, una de las innovaciones más revolucionarias que ha transformado la forma en que los ciclistas controlan su velocidad y seguridad en la carretera o en los senderos. En esta nota, te presentaremos las últimas tendencias en frenos hidráulicos que están impactando en la escena ciclista y cómo estas mejoras pueden llevar tus aventuras sobre ruedas al siguiente nivel.</p>
-            <h3>Frenos de Disco Aerodinámicos</h3>
+            <h1 class="blog-title">Las Últimas Tendencias en Frenos Hidráulicos para Ciclismo</h1>
+            <p class="blog-date">Publicado el <span class="tie-date">Publicado el 26 de septiembre de 2023</span></p>
+            <p class="blog-intro">En el emocionante mundo del ciclismo, la tecnología y la innovación nunca dejan de avanzar. En esta ocasión, nos sumergimos en el fascinante mundo de los frenos hidráulicos, una de las innovaciones más revolucionarias que ha transformado la forma en que los ciclistas controlan su velocidad y seguridad en la carretera o en los senderos. En esta nota, te presentaremos las últimas tendencias en frenos hidráulicos que están impactando en la escena ciclista y cómo estas mejoras pueden llevar tus aventuras sobre ruedas al siguiente nivel.</p>
+            <h2 class="blog-subtitle">Frenos de Disco Aerodinámicos</h2>
             <p>Una de las tendencias más notables en frenos hidráulicos para ciclismo es la creciente adopción de frenos de disco aerodinámicos. Estos frenos no solo mejoran la estética de tu bicicleta, sino que también ofrecen un rendimiento excepcional en términos de frenado y control. Las marcas líderes en la industria están incorporando diseños más aerodinámicos para reducir la resistencia al viento y mejorar la eficiencia en situaciones de alta velocidad.</p>
-            <img src="../../img/vista-frontal-hombre-bicicleta-montana.jpg" alt="frenos hidraulicos">
-            <h3>Frenos Hidráulicos Electrónicos</h3>
+            <img class="blog-image" src="../../img/vista-frontal-hombre-bicicleta-montana.jpg" alt="Imagen de frenos hidráulicos">
+            <h2 class="blog-subtitle">Frenos Hidráulicos Electrónicos</h2>
             <p>La integración de la tecnología electrónica en los frenos hidráulicos es otra tendencia emocionante. Los frenos hidráulicos electrónicos ofrecen un control más preciso y personalizable, permitiéndote ajustar la potencia de frenado con mayor facilidad. Además, algunas versiones cuentan con sensores que monitorean la velocidad y las condiciones de la carretera, ajustando automáticamente la fuerza de frenado para mantener un rendimiento óptimo en todo momento.</p>
-            <h3> Ligereza y Durabilidad</h3>
+            <h2 class="blog-subtitle">Ligereza y Durabilidad</h2>
             <p>Los ciclistas profesionales y aficionados buscan cada vez más frenos hidráulicos que sean ligeros y duraderos. Las últimas tendencias se centran en el uso de materiales de alta calidad, como aleaciones de aluminio y carbono, para reducir el peso sin comprometer la resistencia y la durabilidad. Esto significa que puedes tener frenos más ligeros en tu bicicleta sin sacrificar la confiabilidad.</p>
-            <h3>Conclusión</h3>
+            <h2 class="blog-subtitle">Conclusión</h2>
             <p>Las tendencias en frenos hidráulicos están evolucionando constantemente para brindar a los ciclistas una experiencia más segura y emocionante. Ya sea que busques una mayor aerodinámica, la última tecnología electrónica o la durabilidad en terrenos difíciles, hay opciones disponibles para satisfacer todas tus necesidades. Mantente al tanto de estas tendencias para asegurarte de que tu bicicleta esté equipada con lo último y lo mejor en frenos hidráulicos y disfruta de un viaje más suave y seguro en cada ruta. ¡Pedalea con confianza!</p>
         </article>
     </section>
-    <footer>
-        <div class="footer-contenedor">
-            <div class="footer">  
-                <div class="footer-txt">
-                    <h2>LOGO</h2>
-                    <h3>Todos los dereschos reservados</h3>
-                </div>    
-                <div class="media-link">
-                    <a href="#"><img src="../../img/facebook_5968764.png" alt="facebook"></a>
-                    <a href="#"><img src="../../img/instagram_2111463.png" alt="instagram"></a>
-                    <a href="#"><img src="../../img/twitter_5968958.png" alt="twitter"></a>
-                    <a href="#"><img src="../../img/youtube_1384060.png" alt="youtube"></a>
+    </main>
+    <footer class="bg-dark text-light py-3 mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text mb-0">CicloMundo </p>
                 </div>
-            </div>      
-                <div class="agenda_link">
-                    <h2>AGENDA</h2>
-                    <ul>
-                        <li><a href="#">ENLACE</a></li>
-                        <li><a href="#">ENLACE</a></li>
-                        <li><a href="#">ENLACE</a></li>
-                        <li><a href="#">ENLACE</a></li>
-                        <li><a href="#">ENLACE</a></li>
+                <div class="col-md-6">
+                    <ul class="list-unstyled d-flex justify-content-end mb-0">
+                        <li class="me-3"><a href="../road.html">Ruta</a></li>
+                        <li class="me-3"><a href="../mtb.html">Mountain Bike</a></li>
+                        <li class="me-3"><a href="../entrenamiento.html">Entrenamiento</a></li>
+                        <li class="me-3"><a href="../nutricion.html">Nutrición</a></li>
                     </ul>
                 </div>
-                <div class="ligas_link">
-                    <h2>LIGAS</h2>
-                    <ul>
-                        <li><a href="#">ENLACE</a></li>
-                        <li><a href="#">ENLACE</a></li>
-                        <li><a href="#">ENLACE</a></li>
-                        <li><a href="#">ENLACE</a></li>
-                        <li><a href="#">ENLACE</a></li>
-                    </ul>
-                </div>
-                <div class="agenda-nacional_link">
-                    <h2>AGENDA NACIONAL</h2>
-                    <ul>
-                        <li><a href="#">ENLACE</a></li>
-                        <li><a href="#">ENLACE</a></li>
-                        <li><a href="#">ENLACE</a></li>
-                        <li><a href="#">ENLACE</a></li>
-                        <li><a href="#">ENLACE</a></li>
-                    </ul>
-                </div>
+            </div>
         </div>
-
-
-
+        <div class="sub-footer bg-dark text-light py-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-unstyled d-flex mb-0">
+                            <li class="me-2"><a href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li class="me-2"><a href="#"><i class="bi bi-facebook"></i></a></li>
+                            <li class="me-2"><a href="#"><i class="bi bi-youtube"></i></a></li>
+                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-unstyled d-flex justify-content-end mb-0">
+                            <li class="me-3"><a href="#">Política de privacidad</a></li>
+                            <li><a href="#">Copyright</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
 </body>
 </html>
