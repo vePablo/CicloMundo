@@ -1,0 +1,18 @@
+{
+  "name": "ciclomundo",
+  "version": "1.0.0",
+  "description": "CicloMundo es un proyecto web dedicado al mundo del ciclismo. Proporciona contenido relacionado con rutas, consejos de entrenamiento, nutrición y noticias sobre el ciclismo. Es una plataforma para entusiastas del ciclismo que desean mantenerse actualizados y obtener información valiosa sobre este deporte.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1"
+  }
+}
