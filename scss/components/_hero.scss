@@ -1,0 +1,18 @@
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.452)), url(../img/bg_hero.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 550px;
+    width: 100%;
+}
+
+.hero-texto {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}

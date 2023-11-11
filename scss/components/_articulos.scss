@@ -1,0 +1,45 @@
+.navegador {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.blog-container {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-title {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+.blog-date {
+    font-size: 14px;
+    color: #777;
+}
+
+.blog-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    margin: 20px 0;
+}
+
+.blog-subtitle {
+    font-size: 20px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.blog-intro {
+    font-size: 16px;
+    color: #555;
+}
+
+.blog-subtitle+p {
+    margin-top: 10px;
+}

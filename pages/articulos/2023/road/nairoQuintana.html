@@ -3,7 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../../../../css/style.css">
+        <!-- style -->
+        <!-- <link rel="stylesheet" href="../../../../css/style.css"> -->
+        <!-- scss -->
+        <link rel="stylesheet" href="../../../../css/estilos.css">
+        <!-- aos -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <title>CicloMundo: La vuelta de Nairo Quintana con el jersey de Movistar</title>
@@ -50,7 +55,7 @@
         <article class="blog">
             <h1 class="blog-title">Ciclismo: Nairo Quintana Regresa a Movistar Después de Cinco Años</h1>
             <p class="blog-date">Publicado el 30 de octubre de 2023</p>
-            <img class="blog-image" src="../../../../img/articulos/ruta/nairo.jpeg" loading="lazy" alt="Nairo Quintana">
+            <img data-aos="zoom-out-up" class="blog-image" src="../../../../img/articulos/ruta/nairo.jpeg" loading="lazy" alt="Nairo Quintana">
             <p class="blog-intro">El destacado ciclista colombiano, Nairo Quintana, ha anunciado su regreso a Movistar tras pasar cinco años fuera de la escuadra española. Este inesperado retorno marca un emocionante momento en su carrera después de un año sin competir en 2023. Nairo ha enfrentado desafíos significativos, incluyendo su separación de Arkea en 2022 debido a un resultado positivo en el control de tramadol, el cual sorprendentemente no resultó en una sanción oficial.</p>
     
             <h2 class="blog-subtitle">Un Regreso Triunfal</h2>
@@ -106,5 +111,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
 </body>
 </html>

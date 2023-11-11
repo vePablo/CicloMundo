@@ -1,0 +1,47 @@
+@media (min-width: 375px) {
+    footer {
+        p {
+            text-align: center;
+            font-size: 2rem;
+        }
+    }
+
+    .media {
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .img-carrusel {
+        height: 200px;
+    }
+}
+
+@media (min-width: 576px) {
+    footer {
+        p {
+            font-size: 2rem;
+            text-align: start;
+        }
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .media {
+        justify-content: center;
+        padding: 10px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+        p {
+            font-size: 1.7rem;
+        }
+    }
+
+    .img-carrusel {
+        height: 400px;
+    }
+}

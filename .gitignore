@@ -1,2 +1,4 @@
 *.mp4
 img/videos/
+node_modules/
+txt.md/

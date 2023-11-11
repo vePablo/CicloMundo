@@ -3,7 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../../../../css/style.css">
+        <!-- style -->
+        <!-- <link rel="stylesheet" href="../../../../css/style.css"> -->
+        <!-- scss -->
+        <link rel="stylesheet" href="../../../../css/estilos.css">
+        <!-- aos -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <title>CicloMundo: Resumen de la segunda etapa Vuelta a España</title>
@@ -50,7 +55,7 @@
         <article class="blog">
             <h1 class="blog-title">La Vuelta 2023 - Etapa 2: Victoria de Andreas Kron en Montjuïc</h1>
             <p class="blog-date">Publicado el 30 de octubre de 2023</p>
-            <img class="blog-image" src="../../../../img/articulos/ruta/andreas_lorentz_kron.png" alt="Andreas Kron">
+            <img data-aos="zoom-in-left" class="blog-image" src="../../../../img/articulos/ruta/andreas_lorentz_kron.png" alt="Andreas Kron">
             <p class="blog-intro">Andreas Kron, un destacado ganador de etapas en la Volta a Catalunya y el Tour de Suiza, ha vuelto a subir a lo más alto del podio en tierras catalanas, esta vez en una gran vuelta y en un escenario icónico para el ciclismo: la montaña de Montjuïc. En cumplimiento del protocolo climatológico, los tiempos para la clasificación general se tomaron a 9 kilómetros de la línea de meta, lo que benefició al líder Andrea Piccolo (EF Education EasyPost), quien resistió en la escapada al pasar por la avenida Reina Maria Cristina.</p>
     
             <h2 class="blog-subtitle">La Fuga de los Valientes</h2>
@@ -107,5 +112,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
 </body>
 </html>
