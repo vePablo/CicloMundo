@@ -8,10 +8,7 @@
 }
 
 .hero-texto {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+    @include flex (flex, column, nowrap, center, center);
     height: 500px;
     color: #fff;
     font-family: 'Roboto', sans-serif;

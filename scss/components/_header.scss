@@ -6,8 +6,8 @@
 }
 
 .navbar-animacion {
-    // Estilos de la barra de navegación
-    background: linear-gradient(to left, #333, rgb(70, 70, 64));
+    
+    background: $bg-gradient;
     
     ul li a {
         color: #fff;

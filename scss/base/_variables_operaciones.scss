@@ -1,0 +1,22 @@
+// bg nav-bar y footer 
+$bg-gradient: linear-gradient(to left, #333, rgb(70, 70, 64));
+
+// ------mixin
+@mixin flex($dis, $direc, $corte, $justi, $align) {
+    display: $dis;
+    flex-flow: $direc $corte;
+    justify-content: $justi;
+    align-items: $align;
+}
+// @include flex { flex, row nowrap, center,center}
+
+
+@mixin movil($medida: 480px) {
+    @media screen and (max-width: $medida) {
+        @content;
+    }
+}
+// @include movil(768px){width:50%}
+// @include movil(){width:100%}
+
+// Cuando no declao los px dentro del () se entiende que son los 480 predeterminados pero al declarar modificamos el valo declarado

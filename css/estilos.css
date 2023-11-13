@@ -1,7 +1,20 @@
+@charset "UTF-8";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 @import url("https://fonts.googleapis.com/css2?family=Gelasio&family=Roboto:wght@400;700&display=swap");
-:root {
-  --color: #ffff00; }
+.responsive-iframe {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* proporción 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%; }
+
+.responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 * {
   margin: 0;
@@ -81,30 +94,32 @@
     display: block; }
   .tarjeta .card-body {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     height: 200px; }
-    .tarjeta .card-body .card-text {
-      height: 100%;
-      white-space: initial;
-      padding: 10px; }
-    .tarjeta .card-body .btn-titulos {
-      font-size: 1.5rem;
-      font-weight: bold;
-      text-align: center;
-      margin-bottom: 20px; }
-    .tarjeta .card-body .btn.btn-primary {
-      background-color: #007bff;
-      color: #fff; }
-      .tarjeta .card-body .btn.btn-primary:hover {
-        background-color: #0056b3; }
+  .tarjeta .card-text {
+    height: 100%;
+    white-space: initial;
+    padding: 10px; }
+  .tarjeta .btn-titulos {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px; }
+  .tarjeta .btn.btn-primary {
+    background-color: #007bff;
+    color: #fff; }
+    .tarjeta .btn.btn-primary:hover {
+      background-color: #0056b3; }
 
 /* patrocinadores */
 .patro_contenedor {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap; }
+  align-items: center; }
   .patro_contenedor img {
     filter: grayscale(100%);
     margin: 20px 0; }

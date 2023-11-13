@@ -1,8 +1,6 @@
 .patro_contenedor {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    @include flex (flex, row, wrap, space-around, center);
+    
 
     & img {
         filter: grayscale(100%);
