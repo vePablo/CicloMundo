@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+                <!-- index -->
+        <loc>https://www.ejemplo.com/</loc>
+        <lastmod>2023-11-08</lastmod> 
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+                <!-- pages -->
+        <loc>https://www.ejemplo.com/pagina1.html</loc>  
+        <lastmod>2023-11-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.ejemplo.com/pagina2.html</loc>
+        <lastmod>2023-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.ejemplo.com/pagina3.html</loc>
+        <lastmod>2023-10-26</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.6</priority>
+    </url>
+        <url>
+        <loc>https://www.ejemplo.com/pagina3.html</loc>
+        <lastmod>2023-10-26</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.6</priority>
+    </url>
+                <!-- articulos road -->
+        <url>
+        <loc>https://www.ejemplo.com/pagina3.html</loc>
+        <lastmod>2023-10-26</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.6</priority>
+    </url>
+        <url>
+        <loc>https://www.ejemplo.com/pagina3.html</loc>
+        <lastmod>2023-10-26</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.6</priority>
+    </url>
+        <url>
+        <loc>https://www.ejemplo.com/pagina3.html</loc>
+        <lastmod>2023-10-26</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.6</priority>
+    </url>
+        <url>
+        <loc>https://www.ejemplo.com/pagina3.html</loc>
+        <lastmod>2023-10-26</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.6</priority>
+    </url>
+                <!-- articulos mtb -->
+        <url>
+        <loc>https://www.ejemplo.com/pagina3.html</loc>
+        <lastmod>2023-10-26</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.6</priority>
+    </url>
+        <url>
+        <loc>https://www.ejemplo.com/pagina3.html</loc>
+        <lastmod>2023-10-26</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.6</priority>
+    </url>
+        <url>
+        <loc>https://www.ejemplo.com/pagina3.html</loc>
+        <lastmod>2023-10-26</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.6</priority>
+    </url>
+                <!-- articulos entrenamiento -->
+        <url>
+        <loc>https://www.ejemplo.com/pagina3.html</loc>
+        <lastmod>2023-10-26</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.6</priority>
+    </url>
+        <url>
+        <loc>https://www.ejemplo.com/pagina3.html</loc>
+        <lastmod>2023-10-26</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.6</priority>
+    </url>
+            <!-- articulos nuticion -->
+        <url>
+        <loc>https://www.ejemplo.com/pagina3.html</loc>
+        <lastmod>2023-10-26</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.6</priority>
+    </url>
+        <url>
+        <loc>https://www.ejemplo.com/pagina3.html</loc>
+        <lastmod>2023-10-26</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.6</priority>
+    </url>
+        <url>
+        <loc>https://www.ejemplo.com/pagina3.html</loc>
+        <lastmod>2023-10-26</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    
+    <!-- agrega más URL  -->
+</urlset>
