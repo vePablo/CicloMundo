@@ -13,6 +13,25 @@
   width: 30px;
   height: 24px; }
 
+.navbar-animacion {
+  background: linear-gradient(to left, #333, #464640); }
+  .navbar-animacion ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative; }
+    .navbar-animacion ul li a::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background-color: #fff;
+      transition: width 0.3s ease-in-out;
+      transform: translateX(-50%); }
+    .navbar-animacion ul li a:hover::before {
+      width: 100%; }
+
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.452)), url(../img/bg_hero.jpeg);
   background-position: center center;
