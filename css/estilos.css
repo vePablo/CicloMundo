@@ -66,9 +66,15 @@
 .img-carrusel {
   height: 500px; }
 
+.carousel-caption {
+  background-color: #ffffff77; }
+
 /* ---------titulos */
 .img-carrusel {
   height: 500px; }
+
+.carousel-caption {
+  background-color: #ffffff77; }
 
 /* ---------noticias */
 .contenedor {
@@ -76,14 +82,13 @@
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
-  padding: 10px;
   margin: auto;
   gap: 10px; }
 
 .tarjeta {
-  width: 300px;
+  width: 350px;
   height: 400px;
-  overflow: hidden;
+  margin-top: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease; }
   .tarjeta:hover {
@@ -98,7 +103,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 200px; }
+    height: 200px;
+    padding: 5px; }
   .tarjeta .card-text {
     height: 100%;
     white-space: initial;
@@ -108,11 +114,13 @@
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px; }
-  .tarjeta .btn.btn-primary {
-    background-color: #007bff;
-    color: #fff; }
-    .tarjeta .btn.btn-primary:hover {
-      background-color: #0056b3; }
+  .tarjeta .btn {
+    margin-bottom: 10px; }
+    .tarjeta .btn.btn-primary {
+      background-color: #007bff;
+      color: #fff; }
+      .tarjeta .btn.btn-primary:hover {
+        background-color: #0056b3; }
 
 /* patrocinadores */
 .patro_contenedor {
@@ -211,7 +219,7 @@ footer {
       position: absolute;
       width: 5%;
       height: 100%;
-      left: -15px;
+      left: -5%;
       top: 0;
       background-color: #da5e5e;
       transform: skew(28deg, 0deg);
@@ -229,11 +237,11 @@ footer {
       z-index: -1; }
     .btn-titulos:hover::after {
       background-color: #da5e5e6e;
-      transform: skew(28deg, 0deg) translatex(400px); }
+      transform: skew(28deg, 0deg) translatex(2300%); }
     .btn-titulos:hover::before {
       background-color: #ffff00;
       border: 3px solid #ffff00;
-      transform: skew(28deg, 0deg) scale(1.5); }
+      transform: skew(28deg, 0deg) scale(1.2); }
 
 /* @medias */
 @media (min-width: 375px) {

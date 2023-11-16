@@ -13,7 +13,7 @@
             position: absolute;
             width: 5%;
             height: 100%;
-            left: -15px;
+            left: -5%;
             top: 0;
             background-color: #da5e5e;
             transform: skew(28deg, 0deg);
@@ -35,13 +35,13 @@
 
         &:hover::after {
             background-color: #da5e5e6e;
-            transform: skew(28deg, 0deg) translatex(400px);
+            transform: skew(28deg, 0deg) translatex(2300%);
         }
 
         &:hover::before {
             background-color: #ffff00;
             border: 3px solid #ffff00;
-            transform: skew(28deg, 0deg) scale(1.5);
+            transform: skew(28deg, 0deg) scale(1.2);
         }
     }
 }
