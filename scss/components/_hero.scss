@@ -1,10 +1,11 @@
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.452)), url(../img/bg_hero.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.452)), url(../../img/hero2.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 550px;
+    height: 100vh;
     width: 100%;
+    @include flex (flex, row, nowrap, space-around,center);
 }
 
 .hero-texto {
@@ -12,4 +13,49 @@
     height: 500px;
     color: #fff;
     font-family: 'Roboto', sans-serif;
+    h1{
+        font-size: 5.5rem;
+    }
 }
+
+// ---------------------------
+.palmares {
+    text-align: center;
+    h2{
+        color: #fff;
+    }
+}
+
+.posiciones {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.posiciones_tarjeta {
+    // border: 1px solid #ccc;
+    background-color: #29282897;
+    width: 450px;
+    height: auto;
+    @include flex (flex, row, nowrap,space-between,center)
+}
+.clasificacion{
+    color: #fff;
+    margin-left: 5px;
+    .clasificacion_equipo {
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+    }
+    .clasificacion_ciclista {
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+    }
+}
+.jersay img,
+.ciclista img {
+    width: 100%;
+    max-height: 100px; /* Ajusta la altura máxima según tus necesidades */
+    object-fit: cover;
+}
+
