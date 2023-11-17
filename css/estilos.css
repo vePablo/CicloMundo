@@ -46,7 +46,7 @@
       width: 100%; }
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.452)), url(../../img/hero2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.452)), url(../img/hero2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
