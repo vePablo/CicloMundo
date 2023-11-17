@@ -1,9 +1,9 @@
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.452)), url(../img/hero2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.452)), url(../img/hero2.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     @include flex (flex, row, nowrap, space-around,center);
 }
@@ -13,15 +13,18 @@
     height: 500px;
     color: #fff;
     font-family: 'Roboto', sans-serif;
+    padding: 10px;
     h1{
-        font-size: 5.5rem;
+        // font-size: 5.5rem;
+        font-weight: bold;
     }
 }
 
-// ---------------------------
 .palmares {
+    padding: 10px;
     text-align: center;
-    h2{
+
+    h2 {
         color: #fff;
     }
 }
@@ -32,30 +35,37 @@
 }
 
 .posiciones_tarjeta {
-    // border: 1px solid #ccc;
     background-color: #29282897;
     width: 450px;
     height: auto;
-    @include flex (flex, row, nowrap,space-between,center)
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
-.clasificacion{
+
+.clasificacion {
     color: #fff;
-    margin-left: 5px;
-    .clasificacion_equipo {
-        text-transform: uppercase;
+    margin-left: 10px;
+    text-align: center; 
+    max-width: 220px; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+
+    .clasificacion_equipo,
+    .clasificacion_ciclista,
+    .clasificacion_tiempo {
         margin: 0;
         padding: 0;
-    }
-    .clasificacion_ciclista {
         text-transform: uppercase;
-        margin: 0;
-        padding: 0;
     }
 }
+
 .jersay img,
 .ciclista img {
     width: 100%;
-    max-height: 100px; /* Ajusta la altura máxima según tus necesidades */
+    max-height: 100px;
     object-fit: cover;
 }
 

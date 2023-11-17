@@ -1,8 +1,14 @@
+
+
+
 @media (min-width: 375px) {
-    .hero-texto{
-        h1{
-            font-size: 2.5rem;
-        }
+    .hero-texto {
+        text-align: center;
+        margin: 10px;
+    }
+    .hero {
+        height: 400px;
+        width: auto;
     }
     footer {
         p {
@@ -22,10 +28,8 @@
 }
 
 @media (min-width: 576px) {
-    .hero-texto{
-        h1{
-            font-size: 2.5rem;
-        }
+    .hero {
+    height: 80vh;
     }
     footer {
         p {
@@ -45,6 +49,9 @@
 }
 
 @media (min-width: 768px) {
+    .hero {
+        height: 90vh;
+    }
     footer {
         p {
             font-size: 1.7rem;
@@ -56,8 +63,14 @@
     }
 }
 
-@media (max-width:995px){
-    .palmares{
+@media (min-width: 995px) {
+    .hero-texto h1 {
+        font-size: 5.5rem;
+    }
+}
+
+@media (max-width: 995px) {
+    .palmares {
         display: none;
     }
 }

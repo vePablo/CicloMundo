@@ -46,11 +46,11 @@
       width: 100%; }
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.452)), url(../img/hero2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.452)), url(../img/hero2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
@@ -64,11 +64,13 @@
   align-items: center;
   height: 500px;
   color: #fff;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  padding: 10px; }
   .hero-texto h1 {
-    font-size: 5.5rem; }
+    font-weight: bold; }
 
 .palmares {
+  padding: 10px;
   text-align: center; }
   .palmares h2 {
     color: #fff; }
@@ -82,27 +84,29 @@
   width: 450px;
   height: auto;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center; }
 
 .clasificacion {
   color: #fff;
-  margin-left: 5px; }
-  .clasificacion .clasificacion_equipo {
-    text-transform: uppercase;
+  margin-left: 10px;
+  text-align: center;
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+  .clasificacion .clasificacion_equipo,
+  .clasificacion .clasificacion_ciclista,
+  .clasificacion .clasificacion_tiempo {
     margin: 0;
-    padding: 0; }
-  .clasificacion .clasificacion_ciclista {
-    text-transform: uppercase;
-    margin: 0;
-    padding: 0; }
+    padding: 0;
+    text-transform: uppercase; }
 
 .jersay img,
 .ciclista img {
   width: 100%;
   max-height: 100px;
-  /* Ajusta la altura máxima según tus necesidades */
   object-fit: cover; }
 
 /* --------carrusel */
@@ -288,8 +292,12 @@ footer {
 
 /* @medias */
 @media (min-width: 375px) {
-  .hero-texto h1 {
-    font-size: 2.5rem; }
+  .hero-texto {
+    text-align: center;
+    margin: 10px; }
+  .hero {
+    height: 400px;
+    width: auto; }
   footer p {
     text-align: center;
     font-size: 2rem; }
@@ -300,8 +308,8 @@ footer {
     height: 200px; } }
 
 @media (min-width: 576px) {
-  .hero-texto h1 {
-    font-size: 2.5rem; }
+  .hero {
+    height: 80vh; }
   footer p {
     font-size: 2rem;
     text-align: start; }
@@ -312,10 +320,16 @@ footer {
     padding: 10px 0; } }
 
 @media (min-width: 768px) {
+  .hero {
+    height: 90vh; }
   footer p {
     font-size: 1.7rem; }
   .img-carrusel {
     height: 400px; } }
+
+@media (min-width: 995px) {
+  .hero-texto h1 {
+    font-size: 5.5rem; } }
 
 @media (max-width: 995px) {
   .palmares {
