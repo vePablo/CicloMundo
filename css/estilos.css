@@ -104,7 +104,8 @@
   .clasificacion .clasificacion_tiempo {
     margin: 0;
     padding: 0;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 1.2rem; }
 
 .jersay img,
 .ciclista img {
