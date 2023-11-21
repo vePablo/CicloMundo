@@ -218,40 +218,37 @@
 .blog-subtitle + p {
   margin-top: 10px; }
 
-/* footer */
-footer {
-  background: linear-gradient(to left, #333, #464640); }
-  footer ul li a {
-    text-decoration: none;
-    position: relative; }
-    footer ul li a::before {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      width: 0;
-      height: 2px;
-      background-color: #fff;
-      transition: width 0.3s ease-in-out;
-      transform: translateX(-50%); }
-    footer ul li a:hover::before {
-      width: 100%; }
+.app-Contenedor {
+  margin-top: 20px; }
 
-.sub-footer ul li a {
-  text-decoration: none;
-  position: relative; }
-  .sub-footer ul li a::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background-color: #fff;
-    transition: width 0.3s ease-in-out;
-    transform: translateX(-50%); }
-  .sub-footer ul li a:hover::before {
-    width: 100%; }
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.252); }
+
+.app-body {
+  padding: 20px; }
+
+.app-title {
+  color: #007BFF;
+  font-size: 2.5rem;
+  font-weight: bold; }
+
+.card-text {
+  color: #666; }
+
+.app-descarga {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center; }
+
+.app-iconos {
+  font-size: 2.5em;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center; }
 
 .btn {
   position: relative;
@@ -289,6 +286,41 @@ footer {
       background-color: #ffff00;
       border: 3px solid #ffff00;
       transform: skew(28deg, 0deg) scale(1.2); }
+
+/* footer */
+footer {
+  background: linear-gradient(to left, #333, #464640); }
+  footer ul li a {
+    text-decoration: none;
+    position: relative; }
+    footer ul li a::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background-color: #fff;
+      transition: width 0.3s ease-in-out;
+      transform: translateX(-50%); }
+    footer ul li a:hover::before {
+      width: 100%; }
+
+.sub-footer ul li a {
+  text-decoration: none;
+  position: relative; }
+  .sub-footer ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease-in-out;
+    transform: translateX(-50%); }
+  .sub-footer ul li a:hover::before {
+    width: 100%; }
 
 /* @medias */
 @media (min-width: 375px) {

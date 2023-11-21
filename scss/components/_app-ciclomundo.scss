@@ -1,0 +1,35 @@
+// styles.scss
+
+.app-Contenedor {
+    margin-top: 20px; 
+}
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.252); 
+  }
+  
+  .app-body {
+    padding: 20px; 
+  }
+  
+  .app-title {
+    color: #007BFF; 
+    font-size:  2.5rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    color: #666; // Color del texto
+  }
+
+ 
+.app-descarga{
+    
+    @include flex (flex, row, nowrap, center,center);
+}
+  .app-iconos {
+    font-size: 2.5em; // Tamaño de los iconos
+    padding: 10px;
+    margin: 10px;
+    @include flex (flex, row, nowrap, space-around,center);
+  }
+  
