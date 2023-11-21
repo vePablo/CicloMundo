@@ -32,10 +32,10 @@
     }
         & .card-text {
             height: 100%;
-            // overflow: hidden;
-            // text-overflow: ellipsis;
+            overflow: hidden;
+            text-overflow: ellipsis;
             white-space: initial;
-            // flex-grow: 0.1; // Se supone que ocupe el espacio restante
+            flex-grow: 0.1; // Se supone que ocupe el espacio restante
             padding: 10px;
         }
 

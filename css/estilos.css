@@ -157,7 +157,10 @@
     padding: 5px; }
   .tarjeta .card-text {
     height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
     white-space: initial;
+    flex-grow: 0.1;
     padding: 10px; }
   .tarjeta .btn-titulos {
     font-size: 1.5rem;
@@ -225,7 +228,8 @@
   margin-top: 20px; }
 
 .card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.252); }
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.252);
+  max-width: 100%; }
 
 .app-body {
   padding: 20px; }
@@ -236,7 +240,9 @@
   font-weight: bold; }
 
 .card-text {
-  color: #666; }
+  color: #666;
+  width: 75%;
+  margin: auto; }
 
 .app-descarga {
   display: flex;
@@ -247,7 +253,7 @@
 .app-iconos {
   font-size: 2.5em;
   padding: 10px;
-  margin: 10px;
+  margin: 10% 10%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
@@ -255,7 +261,7 @@
 
 .btn {
   position: relative;
-  padding: 20px 50px;
+  padding: .2em 1em;
   letter-spacing: 10px;
   text-transform: uppercase; }
   .btn-titulos {
